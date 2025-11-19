@@ -27,3 +27,38 @@ O arquivo `consumo_energia_30dias.csv` contém:
 | `geracao_solar_kwh` | Energia solar gerada no mesmo período            |
 
  
+## 4. Metodologia da Simulação
+
+Foram aplicadas quatro métricas principais:
+
+### 1-Consumo da rede elétrica  
+
+`consumo_rede = consumo_kwh - geracao_solar_kwh`
+
+### 2-Economia percentual
+
+`economia_percentual = (geracao_solar_kwh / consumo_kwh) * 100`
+
+### 3-Redução de CO₂
+
+Fator brasileiro de emissão: 0,084 kg CO₂ / kWh
+
+`co2_evitado = geracao_solar_kwh * 0.084`
+
+### 4-Gráficos
+
+- Gráfico do consumo x geração solar
+- Gráfico da economia percentual
+
+## 5. Como Executar o Código
+
+**Requisitos**
+
+- Python 3.10+
+- Bibliotecas:
+
+pip install pandas matplotlib
+
+▶️ Executando
+cd src
+python simulacao_energia_solar.py
