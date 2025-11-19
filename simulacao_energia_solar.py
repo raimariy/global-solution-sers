@@ -30,7 +30,7 @@ plt.ylabel("Economia (%)")
 plt.title("Economia de Energia com Uso de Painéis Solares")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("grafico_solar.png")
+plt.savefig("grafico_economico.png")
 plt.close()
 
 # Resultado agregado
