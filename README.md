@@ -59,6 +59,32 @@ Fator brasileiro de emissão: 0,084 kg CO₂ / kWh
 
 pip install pandas matplotlib
 
-▶️ Executando
+**Executando**
 cd src
 python simulacao_energia_solar.py
+
+## Resultados Esperados
+
+**A análise permite visualizar:**
+
+- O quanto da energia total foi compensada pela energia solar
+- Em quais dias a geração foi mais eficiente
+- O total de CO₂ que deixou de ser emitido
+- A economia percentual acumulada
+
+## Conexão com o Futuro do Trabalho
+
+**O futuro do trabalho exige:**
+
+- Sustentabilidade
+- Inteligência energética
+- Automação
+- Redução de custos e impacto ambiental
+
+A energia solar é uma solução estratégica que se integra a esse cenário, reforçando práticas ESG e tornando os ambientes corporativos mais eficientes.
+
+## Conclusão
+
+A simulação demonstra que a energia solar é uma alternativa viável e impactante para ambientes de trabalho modernos.
+A economia gerada e a redução nas emissões de CO₂ reforçam o papel essencial das energias renováveis para o futuro do trabalho — mais sustentável, tecnológico e eficiente.
+
