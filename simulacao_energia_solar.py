@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carregar dados
-df = pd.read_csv("../data/consumo_energia.csv")
+df = pd.read_csv("consumo_energia.csv")
 
 # Cálculos
 df["consumo_rede"] = df["consumo_kwh"] - df["geracao_solar_kwh"]
@@ -19,7 +19,7 @@ plt.ylabel("kWh")
 plt.title("Consumo Total x Geração Solar")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("../docs/grafico_consumo.png")
+plt.savefig("grafico_consumo.png")
 plt.close()
 
 # Gráfico 2 – Economia percentual
@@ -30,7 +30,7 @@ plt.ylabel("Economia (%)")
 plt.title("Economia de Energia com Uso de Painéis Solares")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("../docs/grafico_solar.png")
+plt.savefig("grafico_solar.png")
 plt.close()
 
 # Resultado agregado
