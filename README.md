@@ -1,56 +1,87 @@
-Intregantes
-Ana Flávia Couto Chaves - RM: 566603
-Raissa Marinho de Jesus Viana - RM: 568301
+# GLOBAL SOLUTION – Simulação de Uso de Energia Solar Fotovoltaica On-Grid
 
-# GLOBAL SOLUTION – Simulação de Uso de Energia Solar (30 dias)
+## Integrantes
+- Ana Flávia Couto Chaves – RM: 566603  
+- Raissa Marinho de Jesus Viana – RM: 568301  
 
-## 1. Introdução
-A busca por ambientes de trabalho mais sustentáveis exige a adoção de tecnologias limpas e eficientes. A energia solar é uma alternativa real e acessível para reduzir os custos com eletricidade e diminuir o impacto ambiental.  
-Este projeto apresenta uma **simulação de 30 dias** avaliando como a inclusão de painéis solares afeta o consumo energético de um ambiente corporativo.
+---
+
+## Objetivo
+
+Este projeto tem como objetivo simular a aplicação de um sistema de energia **solar fotovoltaica on-grid** em dois cenários diferentes:  
+- Uma **residência (casa)**  
+- Uma **empresa**
+
+A proposta é analisar os impactos da geração de energia solar no:
+- Consumo de energia elétrica
+- Custo financeiro (economia na conta de luz)
+- Redução da emissão de CO₂  
+
+A solução está diretamente relacionada à sustentabilidade e ao futuro do trabalho, promovendo eficiência energética e redução de impactos ambientais.
+
+---
+
+## Dados Utilizados
+
+Os dados utilizados neste projeto são simulados, com valores realistas de consumo de energia elétrica e geração de energia solar fotovoltaica. Esses dados foram criados com o objetivo de permitir a análise da viabilidade econômica e ambiental da aplicação de um sistema fotovoltaico on-grid em uma residência e em uma empresa.
+
+Foram utilizados três arquivos no formato CSV:
+
+- consumo_casa.csv
+- consumo_empresa.csv
+- geracao_solar.csv
+
+**Arquivo:** consumo_casa.csv
+Este arquivo contém os dados de consumo mensal de energia elétrica de uma residência.
+| Coluna        | Descrição                        |
+| ------------- | -------------------------------- |
+| `Mes`         | Mês da simulação                 |
+| `Consumo_kWh` | Consumo de energia da residência |
+
+**Arquivo:** consumo_empresa.csv
+Este arquivo contém os dados de consumo mensal de energia elétrica de uma empresa.
+| Coluna        | Descrição                     |
+| ------------- | ----------------------------- |
+| `Mes`         | Mês da simulação              |
+| `Consumo_kWh` | Consumo de energia da empresa |
+
+**Arquivo:** geracao_solar.csv
+Este arquivo contém os dados de geração mensal do sistema fotovoltaico.
+| Coluna        | Descrição                                    |
+| ------------- | -------------------------------------------- |
+| `Mes`         | Mês da simulação                             |
+| `Geracao_kWh` | Energia solar fotovoltaica gerada no período |
 
 
-## 2. Objetivo
-Avaliar o impacto da energia solar no consumo total por meio de:
+## Tipo de Sistema Utilizado
 
-- Redução da dependência da rede elétrica  
-- Economia estimada (%)  
-- Redução de CO₂ emitido  
-- Demonstração do potencial de energias renováveis no futuro do trabalho
+O sistema considerado na simulação é do tipo:
 
-## 3. Dados Utilizados
-O arquivo `consumo_energia_30dias.csv` contém:
+**Fotovoltaico On-Grid**
 
-| Coluna              | Descrição                                        |
-|---------------------|--------------------------------------------------|
-| `dia`               | Dia da simulação                                 |
-| `consumo_kwh`       | Consumo energético do dia                        |
-| `geracao_solar_kwh` | Energia solar gerada no mesmo período            |
+Nesse modelo:
+- A energia solar é consumida instantaneamente.
+- O excedente é injetado na rede da concessionária.
+- Esse excedente gera **créditos energéticos**, que são utilizados nos períodos sem sol.
+- Não há uso de baterias.
 
- 
-## 4. Metodologia da Simulação
+---
 
-Foram aplicadas quatro métricas principais:
+## Cenários Simulados
 
-### 1-Consumo da rede elétrica  
+### 1. Casa
+- Alta disponibilidade de área para instalação dos painéis.
+- Capacidade de atender grande parte (ou até 100%) do consumo.
+- Elevada economia financeira.
+- Grande redução de CO₂.
 
-`consumo_rede = consumo_kwh - geracao_solar_kwh`
+### 2. Empresa
+- Área limitada para instalação dos painéis.
+- Cobertura fotovoltaica parcial (aproximadamente 25%).
+- Economia relevante mesmo com geração parcial.
+- Redução significativa de CO₂.
 
-### 2-Economia percentual
-
-`economia_percentual = (geracao_solar_kwh / consumo_kwh) * 100`
-
-### 3-Redução de CO₂
-
-Fator brasileiro de emissão: 0,084 kg CO₂ / kWh
-
-`co2_evitado = geracao_solar_kwh * 0.084`
-
-### 4-Gráficos
-
-- Gráfico do consumo x geração solar
-- Gráfico da economia percentual
-
-## 5. Como Executar o Código
+## Como Executar o Código
 
 **Requisitos**
 
@@ -62,29 +93,3 @@ pip install pandas matplotlib
 **Executando**
 cd src
 python simulacao_energia_solar.py
-
-## Resultados Esperados
-
-**A análise permite visualizar:**
-
-- O quanto da energia total foi compensada pela energia solar
-- Em quais dias a geração foi mais eficiente
-- O total de CO₂ que deixou de ser emitido
-- A economia percentual acumulada
-
-## Conexão com o Futuro do Trabalho
-
-**O futuro do trabalho exige:**
-
-- Sustentabilidade
-- Inteligência energética
-- Automação
-- Redução de custos e impacto ambiental
-
-A energia solar é uma solução estratégica que se integra a esse cenário, reforçando práticas ESG e tornando os ambientes corporativos mais eficientes.
-
-## Conclusão
-
-A simulação demonstra que a energia solar é uma alternativa viável e impactante para ambientes de trabalho modernos.
-A economia gerada e a redução nas emissões de CO₂ reforçam o papel essencial das energias renováveis para o futuro do trabalho — mais sustentável, tecnológico e eficiente.
-
