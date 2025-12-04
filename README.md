@@ -33,7 +33,7 @@ Foram utilizados três arquivos no formato CSV:
 
 **Arquivo:** consumo_casa.csv
 
-Este arquivo contém os dados de consumo mensal de energia elétrica de uma residência.
+Este arquivo contém os dados de consumo mensal de energia de uma residência.
 | Coluna        | Descrição                        |
 | ------------- | -------------------------------- |
 | `Mes`         | Mês da simulação                 |
@@ -41,7 +41,7 @@ Este arquivo contém os dados de consumo mensal de energia elétrica de uma resi
 
 **Arquivo:** consumo_empresa.csv
 
-Este arquivo contém os dados de consumo mensal de energia elétrica de uma empresa.
+Este arquivo contém os dados de consumo mensal de energia de uma empresa.
 | Coluna        | Descrição                     |
 | ------------- | ----------------------------- |
 | `Mes`         | Mês da simulação              |
@@ -88,13 +88,38 @@ Nesse modelo:
 
 ## Como Executar o Código
 
-**Requisitos**
+**Baixar o repositório**
+Você pode clonar o projeto com:
 
-- Python 3.10+
-- Bibliotecas:
+```bash
+git clone <link_do_repositorio>
+```
 
-pip install pandas matplotlib
+Ou baixar os arquivos manualmente pelo GitHub.
+
+**Bibliotecas necessárias**
+pip install pandas numpy matplotlib seaborn
 
 **Executando**
 cd src
-python simulacao_energia_solar.py
+python simulacao_de_uso_de_energias_renovaveis.py
+
+Ou executar diretamente no Google Colab / Jupyter Notebook.
+
+---
+
+## Conexão com o Futuro do Trabalho
+
+A transição para fontes de energia renováveis está diretamente ligada às transformações no mercado de trabalho. O avanço da energia solar fotovoltaica impulsiona a criação de novas profissões, como instaladores de sistemas solares, técnicos em manutenção, engenheiros especializados em energias renováveis, analistas de dados energéticos e desenvolvedores de soluções inteligentes para monitoramento de consumo.
+
+Além disso, a digitalização dos sistemas energéticos, por meio de sensores, automação e análise de dados, exige profissionais cada vez mais capacitados em tecnologia, sustentabilidade e inovação. A integração entre programação, simulação computacional e energias renováveis demonstra como as competências do futuro envolvem não apenas conhecimento técnico, mas também a capacidade de propor soluções eficientes para problemas reais.
+
+Nesse contexto, este projeto se conecta ao futuro do trabalho ao unir sustentabilidade, tecnologia e análise de dados, preparando os estudantes para atuar em um mercado cada vez mais voltado à eficiência energética, à responsabilidade ambiental e à inovação digital.
+
+**Aplicação no Mercado de Trabalho**
+
+- Expansão de empregos na área de energias renováveis
+- Crescimento da demanda por profissionais em tecnologia e sustentabilidade
+- Uso de programação e análise de dados para tomada de decisões
+- Desenvolvimento de soluções inteligentes para eficiência energética
+- Valorização de profissionais com visão socioambiental
