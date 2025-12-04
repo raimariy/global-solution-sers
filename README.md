@@ -32,6 +32,7 @@ Foram utilizados três arquivos no formato CSV:
 - geracao_solar.csv
 
 **Arquivo:** consumo_casa.csv
+
 Este arquivo contém os dados de consumo mensal de energia elétrica de uma residência.
 | Coluna        | Descrição                        |
 | ------------- | -------------------------------- |
@@ -39,6 +40,7 @@ Este arquivo contém os dados de consumo mensal de energia elétrica de uma resi
 | `Consumo_kWh` | Consumo de energia da residência |
 
 **Arquivo:** consumo_empresa.csv
+
 Este arquivo contém os dados de consumo mensal de energia elétrica de uma empresa.
 | Coluna        | Descrição                     |
 | ------------- | ----------------------------- |
@@ -46,6 +48,7 @@ Este arquivo contém os dados de consumo mensal de energia elétrica de uma empr
 | `Consumo_kWh` | Consumo de energia da empresa |
 
 **Arquivo:** geracao_solar.csv
+
 Este arquivo contém os dados de geração mensal do sistema fotovoltaico.
 | Coluna        | Descrição                                    |
 | ------------- | -------------------------------------------- |
@@ -80,6 +83,8 @@ Nesse modelo:
 - Cobertura fotovoltaica parcial (aproximadamente 25%).
 - Economia relevante mesmo com geração parcial.
 - Redução significativa de CO₂.
+
+---
 
 ## Como Executar o Código
 
