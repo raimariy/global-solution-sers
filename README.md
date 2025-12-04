@@ -84,6 +84,14 @@ Nesse modelo:
 - Economia relevante mesmo com geração parcial.
 - Redução significativa de CO₂.
 
+### Comparação dos Cenários: Casa x Empresa
+
+A simulação foi realizada em dois cenários para mostrar como os resultados da energia solar fotovoltaica on-grid variam conforme o tipo de consumo.
+
+Na residência, é mais comum alcançar até 100% de cobertura do consumo, pois a demanda é menor e a área disponível para os painéis geralmente é suficiente. Já na empresa, o consumo é mais elevado e a área para instalação pode ser limitada, resultando em uma geração parcial de energia, como ocorreu na simulação.
+
+A escolha desses dois cenários permite comparar realidades diferentes e mostrar que, apesar das limitações, a energia solar continua sendo uma solução viável e sustentável.
+
 ---
 
 ## Como Executar o Código
@@ -97,10 +105,10 @@ git clone <link_do_repositorio>
 
 Ou baixar os arquivos manualmente pelo GitHub.
 
-**Bibliotecas necessárias**
+**Bibliotecas necessárias:**
 pip install pandas numpy matplotlib seaborn
 
-**Executando**
+**Executando:**
 cd src
 python simulacao_de_uso_de_energias_renovaveis.py
 
